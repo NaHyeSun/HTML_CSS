@@ -42,6 +42,25 @@
     background-color: blanchedalmond;
 }
 
+/* 부정 선택자 */
+#test3 p:not(:nth-child(2n)) {
+    background-color: pink;
+}
+
+/* 문자 선택자 */
+#test4 p::first-letter {
+    font-size: 2em;
+
+}
+#test4 p::first-line {
+    background-color: coral;
+}
+#test4 p::after {
+    content : "@@@ 태그 뒤에 추가 @@@"
+}
+#test4 p::selection {
+    background-color: yellowgreen;
+}
 </style>
 
 </head>
